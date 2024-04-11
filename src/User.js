@@ -5,22 +5,17 @@ import List from './List.jsx';
 import Card from './Card.jsx';
 import Chart from './Chart.jsx';
 import HomeTable from './HomeTable.jsx';
+import UserTable from './UserTable.jsx';
 
-function App() {
+function User() {
   return (
     <div style={{}}>
     <Navbar/>
     <div style={{display:'flex'}}>
     <List />
     <div>
-    <div style={{display:'flex'}}>
-    <Card />
-    </div>
     <div>
-    <Chart/>
-    </div>
-    <div>
-      <HomeTable/>
+      <UserTable/>
     </div>
     </div>
     </div>
@@ -28,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default User;

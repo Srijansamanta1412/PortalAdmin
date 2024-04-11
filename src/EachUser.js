@@ -5,6 +5,7 @@ import List from './List.jsx';
 import Card from './Card.jsx';
 import Chart from './Chart.jsx';
 import HomeTable from './HomeTable.jsx';
+import ChartEachUser from './ChartEachUser.jsx';
 
 function App() {
   return (
@@ -13,11 +14,8 @@ function App() {
     <div style={{display:'flex'}}>
     <List />
     <div>
-    <div style={{display:'flex'}}>
-    <Card />
-    </div>
     <div>
-    <Chart/>
+    <ChartEachUser/>
     </div>
     <div>
       <HomeTable/>
