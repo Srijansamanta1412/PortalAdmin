@@ -8,15 +8,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import User from './User.js';
 import EachUser from './EachUser.js';
 import NewUser from './NewUser.jsx';
-import Main from './Main.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+function Main(){
+    return(
     <>
-    <Main/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+        </Route>
+        <Route path="/user" element={<User/>}></Route>
+        <Route path="/user/test" element={<EachUser/>}></Route>
+        <Route path="/users/new" element={<NewUser/>}></Route>
+      </Routes>
+    </BrowserRouter>
     </>
-);
+)
+}
+export default Main;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
