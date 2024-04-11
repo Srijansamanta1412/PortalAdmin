@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,7 +12,7 @@ import Main from './Main.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-    <Main/>
+    <App/>
     </>
 );
 

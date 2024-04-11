@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import AppNew from './AppNew.js';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -14,7 +14,7 @@ function Main(){
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/AdminPortalNew" element={<App />}>
+        <Route path="/" element={<AppNew />}>
         </Route>
         <Route path="/user" element={<User/>}></Route>
         <Route path="/user/test" element={<EachUser/>}></Route>

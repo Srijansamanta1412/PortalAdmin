@@ -1,31 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import AppNew from './AppNew.js';
+import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar.jsx';
-import List from './List.jsx';
-import Card from './Card.jsx';
-import Chart from './Chart.jsx';
-import HomeTable from './HomeTable.jsx';
-
-function App() {
-  return (
-    <div style={{}}>
-    <Navbar/>
-    <div style={{display:'flex'}}>
-    <List />
-    <div>
-    <div style={{display:'flex'}}>
-    <Card />
-    </div>
-    <div>
-    <Chart/>
-    </div>
-    <div>
-      <HomeTable/>
-    </div>
-    </div>
-    </div>
-    </div>
-  );
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import User from './User.js';
+import EachUser from './EachUser.js';
+import NewUser from './NewUser.jsx';
+import Main from './Main.jsx';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+function App(){
+    return(
+    <>
+    <Main/>
+    </>
+)
 }
-
 export default App;
+
+reportWebVitals();
