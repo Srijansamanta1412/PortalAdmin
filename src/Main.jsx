@@ -14,7 +14,7 @@ function Main(){
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/AdminPortalNew" element={<App />}>
         </Route>
         <Route path="/user" element={<User/>}></Route>
         <Route path="/user/test" element={<EachUser/>}></Route>
