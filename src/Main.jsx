@@ -13,7 +13,7 @@ function Main() {
     return (
         <BrowserRouter >
             <Routes>
-                <Route exact path="/PortalAdmin" element={<AppNew />} />
+                <Route exact path="/" element={<AppNew />} />
                 <Route path="/user" element={<User />} />
                 <Route path="/user/test" element={<EachUser />} />
                 <Route path="/users/new" element={<NewUser />} />

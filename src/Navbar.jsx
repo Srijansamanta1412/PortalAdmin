@@ -170,7 +170,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } ,color:'black'}}
             style={{textDecoration:'none',fontSize:20,fontWeight:'bold',color:'violet'}}
-            to='/PortalAdmin'
+            to='/'
           >
             lamadmin
           </NavLink>
